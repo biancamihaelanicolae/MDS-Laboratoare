@@ -6,6 +6,7 @@ lab3/.venv-wsl/
 lab3/db.sqlite3
 .venv-wsl/
 todos.json
+lab5/todos_agent.json
 
 lab6/ex2_buggy
 lab6/ex2_fixed
