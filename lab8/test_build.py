@@ -9,3 +9,6 @@ def test_titles_appear_in_output():
         items = json.load(f)
     for item in items:
         assert item["title"] in html
+
+def test_broken():
+    assert 1 == 2
