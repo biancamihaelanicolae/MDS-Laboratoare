@@ -1,0 +1,25 @@
+{% extends "courses/base.html" %}
+
+{% block content %}
+<h1>Course Catalog</h1>
+
+<form method="get">
+    <input type="text" name="q" placeholder="Search..." value="{{ query }}">
+    <select name="category">
+        <option value="">All categories</option>
+        {% for cat in categories %}
+        <option value="{{ cat.pk }}">{{ cat.name }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Filter</button>
+</form>
+
+{% for course in courses %}
+<div>
+    <a href="{% url 'course_detail' course.pk %}">{{ course.title }}</a>
+    <div>{{ course.instructor }} | <a href="{% url 'category_courses' course.category.pk %}">{{ course.category.name }}</a> | {{ course.credits }} credits | {{ course.year }}</div>
+</div>
+{% empty %}
+<p>No courses found.</p>
+{% endfor %}
+{% endblock %}
