@@ -6,3 +6,11 @@ lab3/.venv-wsl/
 lab3/db.sqlite3
 .venv-wsl/
 todos.json
+
+lab6/ex2_buggy
+lab6/ex2_fixed
+lab6/ex2b_buggy
+lab6/ex5
+lab6/ex5_buggy
+lab6/perf.data*
+lab6/flamegraph.html
