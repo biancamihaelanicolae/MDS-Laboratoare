@@ -21,3 +21,13 @@ lab6/ex4_prof
 lab6/ex5_fixed
 lab6/gmon.out
 lab6/profile.txt
+
+lab7/race
+lab7/race_fixed
+lab7/sleep
+lab7/hash1
+lab7/hash4
+lab7/hash_general
+lab7/perf.data*
+lab7/flamegraph.html
+*.o
