@@ -1,5 +1,4 @@
 import json
-from pathlib import Path
 from build import build, HERE
 
 def test_titles_appear_in_output():

@@ -1,0 +1,9 @@
+{
+  "next_id": 2,
+  "tasks": {
+    "1": {
+      "description": "buy groceries",
+      "done": false
+    }
+  }
+}
