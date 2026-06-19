@@ -1,0 +1,4 @@
+the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog
+hello world hello world hello world
+the quick brown fox hello world
+this is a test file for word frequency counting hello world
