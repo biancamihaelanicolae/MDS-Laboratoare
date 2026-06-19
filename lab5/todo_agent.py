@@ -122,7 +122,7 @@ def chat_loop():
     print('  "Show pending tasks"')
     print()
 
-    messages = [{"role": "system", "content": "You are a TODO assistant. Use the available tools to manage tasks."}]
+    messages = [{"role": "system", "content": "You are a TODO assistant. You MUST use the provided tools to manage tasks. Do NOT describe what tools to use — ALWAYS call them directly. When asked to add/list/mark/delete tasks, call the appropriate function immediately."}]
     tools = todo_tools()
 
     while True:
