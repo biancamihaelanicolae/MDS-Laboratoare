@@ -30,4 +30,5 @@ lab7/hash4
 lab7/hash_general
 lab7/perf.data*
 lab7/flamegraph.html
+lab8/site/
 *.o

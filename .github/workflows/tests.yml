@@ -1,5 +1,8 @@
 name: tests
-on: [push, pull_request]
+
+on:
+  push:
+  pull_request:
 
 jobs:
   test:
@@ -9,5 +12,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pytest hypothesis
-      - run: pytest lab4/ -v
+      - run: pip install pytest hypothesis ruff
+      - run: ruff check .
+      - run: pytest lab4/ lab8/ -v
